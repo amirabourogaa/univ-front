@@ -100,7 +100,7 @@ export default function About() {
           <div className=" hidden xl:flex flex-1 relative ">
             <DevImg
               containerStyles="bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative items-center"
-              imgSrc="/about/developer.png"
+              imgSrc="/images/about-section.png"
             />
           </div>
           {/* tabs */}
