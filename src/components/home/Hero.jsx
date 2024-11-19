@@ -100,12 +100,12 @@ const Hero = () => {
               badgeText='Base clientèle'
             />
             <div className=' bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2'></div>
-            <div className='text-primary w-[510px] h-[462px] bg-no-repeat relative bg-bottom'>
+            <div className='text-primary w-[500px] h-[462px] bg-no-repeat relative bg-bottom'>
               <svg
                 version='1.2'
                 xmlns='http://www.w3.org/2000/svg'
-                viewBox='0 0 509 462'
-                width='509'
+                viewBox='0 0 509 452'
+                width='500'
                 height='462'
               >
                 <path
@@ -114,7 +114,7 @@ const Hero = () => {
                 />
               </svg>
 
-              <DevImg imgSrc='/images/shape-hero.png' />
+              <DevImg imgSrc='/images/univ-hero.png' />
             </div>
           </div>
         </div>
