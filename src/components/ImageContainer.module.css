@@ -7,10 +7,10 @@
   .image {
     position: absolute;
     top: 0;
-    left: 10;
+    left: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Same as `fill` in Next.js Image */
+    height: 95%;
+    /* object-fit: cover; Same as `fill` in Next.js Image */
     object-position: center; /* Optional: center the image */
   }
   

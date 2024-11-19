@@ -1,5 +1,5 @@
 'use client';
-import { GanttChartSquare, Blocks, Gem } from 'lucide-react';
+import { ShoppingCart, Wrench, MessageCircle } from 'lucide-react';
 import {
   Card,
   CardContent,
@@ -10,23 +10,23 @@ import {
 
 const servicesData = [
   {
-    icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
-    title: 'Web Design',
+    icon: <ShoppingCart size={72} strokeWidth={0.8} />,
+    title: 'Vente & Distribution',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quasi libero quidem sit deserunt fuga.',
+      'Univers Automatisme met à votre service une gamme de produits de marques variées.',
   },
   {
-    icon: <Blocks size={72} strokeWidth={0.8} />,
-    title: 'Web Development',
+    icon: <Wrench size={72} strokeWidth={0.8} />,
+    title: 'Maintenance & SAV',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quasi libero quidem sit deserunt fuga.',
+      'Réparation de systèmes pneumatiques et hydrauliques avec un accompagnement dédié pour des équipements exigeant une expertise technique avancée.',
   },
   {
-    icon: <Gem size={72} strokeWidth={0.8} />,
-    title: 'App Development',
+    icon: <MessageCircle size={72} strokeWidth={0.8} />,
+    title: 'Conseil & Etude',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quasi libero quidem sit deserunt fuga.',
-  },
+      'Nous offrons des conseils techniques, optimisons les procédés, réalisons des dimensionnements sur mesure et sélectionnons les composants les mieux adaptés pour chaque solution.',
+  }
   
 ];
 import AOS from "aos";
