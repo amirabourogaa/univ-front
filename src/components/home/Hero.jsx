@@ -114,7 +114,7 @@ const Hero = () => {
                 />
               </svg>
 
-              <DevImg imgSrc='/images/hero-univers.jpg' />
+              <DevImg imgSrc='/images/shape-hero.png' />
             </div>
           </div>
         </div>
