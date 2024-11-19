@@ -103,7 +103,7 @@ const Reviews = () => {
                   <CardHeader className='p-0 mb-10'>
                     <div className='flex items-center gap-x-4'>
                       {/* image */}
-                      <Image
+                      <img
                         src={person.avatar}
                         width={70}
                         height={70}

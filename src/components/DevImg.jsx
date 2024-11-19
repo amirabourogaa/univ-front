@@ -1,9 +1,9 @@
-import Image from 'next/image';
+import styles from './ImageContainer.module.css';
 
 const DevImg = ({ containerStyles, imgSrc }) => {
   return (
     <div className={`${containerStyles} ` }>
-      <Image src={imgSrc} fill priority alt=''  />
+        <img src={imgSrc} alt="" className={styles.image} />
     </div>
   );
 };

@@ -18,8 +18,8 @@ const page = () => {
         <Services />
       </div>
       <ProgressSlider />
-      <Work />
-      <Reviews />
+      {/* <Work /> */}
+      {/* <Reviews /> */}
       {/* <Stars/> */}
       <Partnaires />
       {/* <Cta /> */}

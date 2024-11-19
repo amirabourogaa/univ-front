@@ -2,8 +2,7 @@
 import React, { useEffect } from 'react'
 import { ModalVideo, useToggle } from '@baskvava/react-video-modal';
 import { motion } from 'framer-motion';
-import picture from '../../images/picture.png'
-import light from '../../images/light.jpg'
+
 import { Button } from '../ui/button';
 import { Send } from 'lucide-react';
 import Image from 'next/image';
@@ -88,7 +87,7 @@ function Head() {
 
                         <div className="absolute bottom-4 -left-[34%] z-9 flex cursor-pointer flex-row items-center space-x-4 rounded-xl bg-white px-4 py-2 text-center shadow transition hover:-translate-y-1 hover:shadow-md">
                             <span className="aspect-square h-8 overflow-clip rounded-full bg-gray-200">
-                                <Image src={light} alt="Idea" loading="eager" />
+                                <img src='/images/picture.png' alt="Idea" loading="eager" />
                             </span>
                             <span className="text-sm font-bold text-primary">
                                 Donnez vie à vos idées
@@ -113,9 +112,9 @@ function Head() {
                                     hidden: { opacity: 0, x: -50 },
                                     visible: { opacity: 1, x: 0 },
                                 }}>
-                                <Image
+                                <img
 
-                                    src={picture}
+                                    src='/images/picture.png'
                                     alt="Picture of the lady with book"
                                     className="scale-[.70] z-8"
                                     loading="eager"

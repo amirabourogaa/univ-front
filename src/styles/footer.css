@@ -8,11 +8,11 @@ footer .wave {
     background-size: 1000px 100px;
 }
 .primaryImage {
-    background: url('../images/wave_colored.png');
+    background: url('../../public/images/wave_colored.png');
   }
   
   .secondaryImage {
-    background: url('../images/waves.png');
+    background: url('../../public/images/waves.png');
   }
 
 footer .wave#wave1 {

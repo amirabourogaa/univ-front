@@ -11,6 +11,7 @@ const links = [
   { path: '/', name: 'Accueil' },
   { path: '/propos', name: 'A propos' },
   { path: '/contact', name: 'Contact' },
+  { path: '/products', name: 'Nos produits' },
 ];
 
 const Nav = ({ containerStyles, linkStyles, underlineStyles ,closeSheet }) => {

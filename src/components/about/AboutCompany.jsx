@@ -2,9 +2,8 @@
 import React, { useEffect } from 'react'
 
 import { Send } from 'lucide-react'
-import Image from 'next/image'
-import man from "../../images/man.png"
-import picture from "../../images/picture.png"
+
+
 import AOS from "aos";
 import 'aos/dist/aos.css';
 import { Button } from '../ui/button'
@@ -37,8 +36,8 @@ function AboutCompany() {
               
                 <div className="h-full w-full overflow-hidden rounded-full">
               
-                    <Image
-                      src={picture}
+                    <img
+                      src='/images/picture.png'
                       alt="Picture of the lady with book"
                       className="scale-[.70] "
                       loading="eager"

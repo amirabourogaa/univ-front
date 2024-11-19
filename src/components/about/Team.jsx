@@ -68,7 +68,7 @@ function Team() {
                             <SwiperSlide className='swiper-slide'>
                                 <div className="space-y-4 w-[320px] h-[320px] sm:h-full sm:w-full" >
                                     <div className="  aspect-[3/2] p-2 overflow-hidden border rounded-3xl border-primary">
-                                        <Image
+                                        <img
                                             className="object-cover w-full h-full rounded-2xl"
                                             src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80"
                                             alt=""
@@ -106,7 +106,7 @@ function Team() {
                             <SwiperSlide>
                                 <div className="space-y-4  w-[320px] h-[320px] sm:h-full sm:w-full" >
                                     <div className=" aspect-[3/2] p-2 overflow-hidden border rounded-3xl border-primary">
-                                        <Image
+                                        <img
                                             className="object-cover w-full h-full rounded-2xl"
                                             src="https://images.unsplash.com/photo-1602434228300-a645bce6891b?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1639&amp;q=80"
                                             alt=""
@@ -144,7 +144,7 @@ function Team() {
                             <SwiperSlide>
                                 <div className="space-y-4  w-[320px] h-[320px] sm:h-full sm:w-full" >
                                     <div className=" aspect-[3/2] p-2 overflow-hidden border rounded-3xl border-primary">
-                                        <Image
+                                        <img
                                             className="object-cover w-full h-full rounded-2xl"
                                             src="https://images.unsplash.com/photo-1602434228300-a645bce6891b?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1639&amp;q=80"
                                             alt=""
@@ -182,7 +182,7 @@ function Team() {
                             <SwiperSlide>
                                 <div className="space-y-4  w-[320px] h-[320px] sm:h-full sm:w-full" >
                                     <div className=" aspect-[3/2] p-2 overflow-hidden border rounded-3xl border-primary">
-                                        <Image
+                                        <img
                                             className="object-cover w-full h-full rounded-2xl"
                                             src="https://images.unsplash.com/photo-1602434228300-a645bce6891b?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1639&amp;q=80"
                                             alt=""

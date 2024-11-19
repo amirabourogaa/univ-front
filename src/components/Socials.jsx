@@ -11,17 +11,10 @@ import {
 import Link from 'next/link';
 
 const icons = [
-  {
-    path: '/',
-    name: <RiYoutubeFill />,
-  },
+
   {
     path: '/',
     name: <RiLinkedinFill />,
-  },
-  {
-    path: '/',
-    name: <RiGithubFill />,
   },
   {
     path: '/',

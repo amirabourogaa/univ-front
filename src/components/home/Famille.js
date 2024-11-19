@@ -3,10 +3,10 @@ import AOS from "aos";
 import 'aos/dist/aos.css';
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
-import SilderIcon01 from '../../../public/ps-icon-01.svg';
-import SilderIcon02 from '../../../public/ps-icon-02.svg';
-import SilderIcon03 from '../../../public/ps-icon-03.svg';
-import SilderIcon04 from '../../../public/ps-icon-04.svg';
+// import SilderIcon01 from '/ps-icon-01.svg';
+// import SilderIcon02 from '../../../public/ps-icon-02.svg';
+// import SilderIcon03 from '../../../public/ps-icon-03.svg';
+// import SilderIcon04 from '../../../public/ps-icon-04.svg';
 import Banner from '@/components/banner.jsx';
 
 export const metadata = {
@@ -32,7 +32,7 @@ export default function ProgressSlider() {
         "/family-product/masonry-12.jpg",
       ],
       desc: "Pneumatique",
-      buttonIcon: SilderIcon01,
+      buttonIcon: '/ps-icon-01.svg',
     },
     {
       img: [
@@ -50,7 +50,7 @@ export default function ProgressSlider() {
         "/family-product/masonry-12.jpg",
       ],
       desc: "Instrumentation",
-      buttonIcon: SilderIcon02,
+      buttonIcon: '/ps-icon-02.svg',
     },
     {
       img: [
@@ -68,7 +68,7 @@ export default function ProgressSlider() {
         "/family-product/masonry-12.jpg",
       ],
       desc: "Controle des fluides",
-      buttonIcon: SilderIcon03,
+      buttonIcon: '/ps-icon-03.svg',
     },
     {
       img: [
@@ -86,7 +86,7 @@ export default function ProgressSlider() {
         "/family-product/masonry-12.jpg",
       ],
       desc: "Technique du vide",
-      buttonIcon: SilderIcon04,
+      buttonIcon: '/ps-icon-04.svg',
     },
   ];
 
@@ -166,7 +166,7 @@ export default function ProgressSlider() {
                     }`}
                   >
                     <span className="flex items-center justify-center relative w-9 h-9 rounded-full bg-indigo-100 mb-2">
-                      <Image src={item.buttonIcon} alt={item.desc} />
+                      <img src={item.buttonIcon} alt={item.desc} />
                     </span>
                     <span className="block text-sm font-medium text-slate-900 mb-2">
                       {item.desc}
@@ -199,7 +199,7 @@ export default function ProgressSlider() {
                         .slice(colIndex * 3, (colIndex + 1) * 3)
                         .map((img, i) => (
                           <div key={i}>
-                            <Image
+                            <img
                               className="h-auto max-w-full rounded-lg"
                               height={400}
                               width={400}
