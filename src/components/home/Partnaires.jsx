@@ -18,44 +18,44 @@ const Partnaires = () => {
               >
                 <ul x-ref="logos" className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
                   <li>
-                    <img src='/partnaires/vuo.png' alt="Vuo" width={128} height={128} />
+                    <img src='pictures/partenaires/1.png' alt="Vuo" width={128} height={128} />
                   </li>
                  
                  
                   <li>
-                    <img src='/partnaires/pixsys.png' alt="Pixsys" width={180} height={180} />
+                    <img src='pictures/partenaires/2.png' alt="Pixsys" width={180} height={180} />
                   </li>
                   <li>
-                    <img src='/partnaires/vuo.png' alt="Vuo" width={128} height={128} />
-                  </li>
-                 
-                 
-                  <li>
-                    <img src='/partnaires/pixsys.png' alt="Pixsys" width={180} height={180} />
-                  </li>
-                  <li>
-                    <img src='/partnaires/vuo.png' alt="Vuo" width={128} height={128} />
+                    <img src='pictures/partenaires/3.png' alt="Vuo" width={128} height={128} />
                   </li>
                  
                  
                   <li>
-                    <img src='/partnaires/pixsys.png' alt="Pixsys" width={180} height={180} />
+                    <img src='pictures/partenaires/4.png' alt="Pixsys" width={180} height={180} />
                   </li>
                   <li>
-                    <img src='/partnaires/vuo.png' alt="Vuo" width={128} height={128} />
-                  </li>
-                 
-                 
-                  <li>
-                    <img src='/partnaires/pixsys.png' alt="Pixsys" width={180} height={180} />
-                  </li>
-                  <li>
-                    <img src='/partnaires/vuo.png' alt="Vuo" width={128} height={128} />
+                    <img src='pictures/partenaires/5.png' alt="Vuo" width={128} height={128} />
                   </li>
                  
                  
                   <li>
-                    <img src='/partnaires/pixsys.png' alt="Pixsys" width={180} height={180} />
+                    <img src='pictures/partenaires/6.png' alt="Pixsys" width={180} height={180} />
+                  </li>
+                  <li>
+                    <img src='pictures/partenaires/7.png' alt="Vuo" width={128} height={128} />
+                  </li>
+                 
+                 
+                  <li>
+                    <img src='pictures/partenaires/8.png' alt="Pixsys" width={180} height={180} />
+                  </li>
+                  <li>
+                    <img src='pictures/partenaires/1.png' alt="Vuo" width={128} height={128} />
+                  </li>
+                 
+                 
+                  <li>
+                    <img src='pictures/partenaires/2.png' alt="Pixsys" width={180} height={180} />
                   </li>
                  
                 

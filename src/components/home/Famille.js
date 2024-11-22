@@ -18,74 +18,90 @@ export default function ProgressSlider() {
   const items = [
     {
       img: [
-        "/family-product/masonry-01.jpg",
-        "/family-product/masonry-02.jpg",
-        "/family-product/masonry-03.jpg",
-        "/family-product/masonry-04.jpg",
-        "/family-product/masonry-05.jpg",
-        "/family-product/masonry-06.jpg",
-        "/family-product/masonry-07.jpg",
-        "/family-product/masonry-08.jpg",
-        "/family-product/masonry-09.jpg",
-        "/family-product/masonry-10.jpg",
-        "/family-product/masonry-11.jpg",
-        "/family-product/masonry-12.jpg",
+        "/pictures/pneumatique/1.jpeg",
+        "/pictures/pneumatique/2.jpg",
+        "/pictures/pneumatique/3.jpg",
+        "/pictures/pneumatique/4.jpg",
+        "/pictures/pneumatique/5.jpg",
+        "/pictures/pneumatique/6.jpg",
+        "/pictures/pneumatique/7.jpg",
+        "/pictures/pneumatique/8.jpg",
+       
       ],
       desc: "Pneumatique",
       buttonIcon: '/ps-icon-01.svg',
     },
     {
       img: [
-        "/family-product/masonry-01.jpg",
-        "/family-product/masonry-02.jpg",
-        "/family-product/masonry-03.jpg",
-        "/family-product/masonry-04.jpg",
-        "/family-product/masonry-05.jpg",
-        "/family-product/masonry-06.jpg",
-        "/family-product/masonry-07.jpg",
-        "/family-product/masonry-08.jpg",
-        "/family-product/masonry-09.jpg",
-        "/family-product/masonry-10.jpg",
-        "/family-product/masonry-11.jpg",
-        "/family-product/masonry-12.jpg",
+        "/pictures/automatisme/1.jpg",
+        "/pictures/automatisme/2.jpeg",
+        "/pictures/automatisme/3.jpg",
+        "/pictures/automatisme/4.webp",
+        "/pictures/automatisme/5.webp",
+        "/pictures/automatisme/6.png",
+        "/pictures/automatisme/7.jpeg",
+        "/pictures/automatisme/8.jpg",
+       
       ],
-      desc: "Instrumentation",
+      desc: "Automatisme",
       buttonIcon: '/ps-icon-02.svg',
     },
     {
       img: [
-        "/family-product/masonry-01.jpg",
-        "/family-product/masonry-02.jpg",
-        "/family-product/masonry-03.jpg",
-        "/family-product/masonry-04.jpg",
-        "/family-product/masonry-05.jpg",
-        "/family-product/masonry-06.jpg",
-        "/family-product/masonry-07.jpg",
-        "/family-product/masonry-08.jpg",
-        "/family-product/masonry-09.jpg",
-        "/family-product/masonry-10.jpg",
-        "/family-product/masonry-11.jpg",
-        "/family-product/masonry-12.jpg",
+        "/pictures/instrumentation/1.jpg",
+        "/pictures/instrumentation/2.jpg",
+        "/pictures/instrumentation/3.png",
+        "/pictures/instrumentation/4.jpg",
+        "/pictures/instrumentation/5.jpg",
+        "/pictures/instrumentation/7.jpg",
+        "/pictures/instrumentation/8.webp",
+       
+       
       ],
-      desc: "Controle des fluides",
+      desc: "Instrumentation & Regulation",
       buttonIcon: '/ps-icon-03.svg',
     },
     {
       img: [
-        "/family-product/masonry-01.jpg",
-        "/family-product/masonry-02.jpg",
-        "/family-product/masonry-03.jpg",
-        "/family-product/masonry-04.jpg",
-        "/family-product/masonry-05.jpg",
-        "/family-product/masonry-06.jpg",
-        "/family-product/masonry-07.jpg",
-        "/family-product/masonry-08.jpg",
-        "/family-product/masonry-09.jpg",
-        "/family-product/masonry-10.jpg",
-        "/family-product/masonry-11.jpg",
-        "/family-product/masonry-12.jpg",
+        "/pictures/controle-de-fluide/1.jpg",
+        "/pictures/controle-de-fluide/2.jpg",
+        "/pictures/controle-de-fluide/3.jpg",
+        "/pictures/controle-de-fluide/4.jpg",
+        "/pictures/controle-de-fluide/5.jpg",
+        "/pictures/controle-de-fluide/6.jpg",
+        "/pictures/controle-de-fluide/7.jpg",
+        
       ],
-      desc: "Technique du vide",
+      desc: "contrôle de fluide",
+      buttonIcon: '/ps-icon-04.svg',
+    },
+    {
+      img: [
+        "/pictures/technique-de-vide/1.webp",
+        "/pictures/technique-de-vide/2.jpg",
+        "/pictures/technique-de-vide/3.jpg",
+        "/pictures/technique-de-vide/4.jpg",
+        "/pictures/technique-de-vide/5.jpg",
+        "/pictures/technique-de-vide/6.jpg",
+        "/pictures/technique-de-vide/7.jpg",
+        "/pictures/technique-de-vide/11.jpg",
+     
+      ],
+      desc: "Technique de vide",
+      buttonIcon: '/ps-icon-04.svg',
+    },
+    {
+      img: [
+        "/pictures/hydraulique/A.jpg",
+        "/pictures/hydraulique/B.webp",
+        "/pictures/hydraulique/C.jpg",
+        "/pictures/hydraulique/D.jpg",
+        "/pictures/hydraulique/DD.jpg",
+        "/pictures/hydraulique/E.jpg",
+        "/pictures/hydraulique/F.png",
+       
+      ],
+      desc: "Hydraulique",
       buttonIcon: '/ps-icon-04.svg',
     },
   ];
@@ -144,82 +160,82 @@ export default function ProgressSlider() {
     AOS.refresh();
   }, []);
   return (
-    <section className="relative min-h-screen flex flex-col justify-center bg-slate-50 overflow-hidden" data-aos="fade-left">
-      <h2 className="section-title mt-12 mb-12 xl:my-12 text-center mx-auto">
-        Gamme <span className="font-caveat">de produits</span>
-      </h2>
-      <div className="w-full max-w-6xl mx-auto px-4 md:px-6 pb-24">
-        <div className="flex justify-center">
-          <div className="w-full max-w-5xl mx-auto text-center">
-            <div className="max-w-xs sm:max-w-sm md:max-w-3xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-              {items.map((item, index) => (
-                <button
-                  key={index}
-                  className="p-2 rounded focus:outline-none focus-visible:ring focus-visible:ring-indigo-300 group"
-                  onClick={() => handleClick(index)}
-                >
-                  <span
-                    className={`text-center flex flex-col items-center ${
-                      active === index
-                        ? ''
-                        : 'opacity-50 group-hover:opacity-100 group-focus:opacity-100 transition-opacity'
-                    }`}
-                  >
-                    <span className="flex items-center justify-center relative w-9 h-9 rounded-full bg-indigo-100 mb-2">
-                      <img src={item.buttonIcon} alt={item.desc} />
-                    </span>
-                    <span className="block text-sm font-medium text-slate-900 mb-2">
-                      {item.desc}
-                    </span>
-                    <span
-                      className="block relative w-full bg-slate-400 h-1 rounded-full"
-                      role="progressbar"
-                      aria-valuenow={active === index ? progress : 0}
-                    >
-                      <span
-                        className="absolute inset-0 bg-secondGreen-500 rounded-[inherit]"
-                        style={{ width: active === index ? `${progress}%` : '0%' }}
-                      ></span>
-                    </span>
-                  </span>
-                </button>
-              ))}
-            </div>
-            <div className="relative flex flex-col">
-              {items.map((item, index) => (
-                <div
-                  key={index}
-                  className={`grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 ${
-                    active === index ? 'block' : 'hidden'
+    <section
+    className="relative min-h-screen flex flex-col justify-center bg-slate-50 overflow-hidden"
+    data-aos="fade-left"
+  >
+    <h2 className="section-title mt-12 mb-12 xl:my-12 text-center mx-auto">
+      Gamme <span className="font-caveat">de produits</span>
+    </h2>
+    <div className="w-full max-w-6xl mx-auto px-4 md:px-6 pb-24">
+      <div className="flex justify-center">
+        <div className="w-full max-w-5xl mx-auto text-center">
+          {/* Boutons de navigation */}
+          <div className="max-w-xs sm:max-w-sm md:max-w-3xl mx-auto grid grid-cols-2 md:grid-cols-6 gap-4 mb-8">
+            {items.map((item, index) => (
+              <button
+                key={index}
+                className="p-2 rounded focus:outline-none focus-visible:ring focus-visible:ring-indigo-300 group"
+                onClick={() => handleClick(index)}
+              >
+                <span
+                  className={`text-center flex flex-col items-center ${
+                    active === index
+                      ? ''
+                      : 'opacity-50 group-hover:opacity-100 group-focus:opacity-100 transition-opacity'
                   }`}
                 >
-                  {[0, 1, 2, 3].map((colIndex) => (
-                    <div className="grid gap-4" key={colIndex}>
-                      {item.img
-                        .slice(colIndex * 3, (colIndex + 1) * 3)
-                        .map((img, i) => (
-                          <div key={i}>
-                            <img
-                              className="h-auto max-w-full rounded-lg"
-                              height={400}
-                              width={400}
-                              src={img}
-                              alt=""
-                            />
-                          </div>
-                        ))}
-                    </div>
-                  ))}
-                </div>
-              ))}
-            </div>
+                  <span className="flex items-center justify-center relative w-9 h-9 rounded-full bg-indigo-100 mb-2">
+                    <img src={item.buttonIcon} alt={item.desc} />
+                  </span>
+                  <span className="block text-sm font-medium text-slate-900 mb-2">
+                    {item.desc}
+                  </span>
+                  <span
+                    className="block relative w-full bg-slate-400 h-1 rounded-full"
+                    role="progressbar"
+                    aria-valuenow={active === index ? progress : 0}
+                  >
+                    <span
+                      className="absolute inset-0 bg-secondGreen-500 rounded-[inherit]"
+                      style={{ width: active === index ? `${progress}%` : '0%' }}
+                    ></span>
+                  </span>
+                </span>
+              </button>
+            ))}
+          </div>
+          {/* Contenu affiché pour chaque élément actif */}
+          <div className="relative flex flex-col">
+            {items.map((item, index) => (
+              <div
+                key={index}
+                className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-12 ${
+                  active === index ? 'block' : 'hidden'
+                }`}
+              >
+                {item.img.map((img, i) => (
+                  <div key={i}>
+                    <img
+                      className="h-auto w-full rounded-lg"
+                      height={400}
+                      width={400}
+                      src={img}
+                      alt=""
+                    />
+                  </div>
+                ))}
+              </div>
+            ))}
           </div>
         </div>
       </div>
-      <Banner
-        tutorialUrl="https://cruip.com/create-a-carousel-with-progress-indicators-using-tailwind-and-nextjs/"
-        downloadUrl="https://github.com/cruip/cruip-tutorials-next/blob/main/components/progress-slider.tsx"
-      />
-    </section>
+    </div>
+    <Banner
+      tutorialUrl="https://cruip.com/create-a-carousel-with-progress-indicators-using-tailwind-and-nextjs/"
+      downloadUrl="https://github.com/cruip/cruip-tutorials-next/blob/main/components/progress-slider.tsx"
+    />
+  </section>
+  
   );
 }
