@@ -5,8 +5,8 @@ import Hero from "@/components/home/Hero";
 import About from "@/components/home/About";
 import Services from "@/components/home/Services";
 import ProgressSlider from "@/components/home/Famille";
-import Work from "@/components/home/Work";
-import Reviews from "@/components/home/Reviews";
+// import Work from "@/components/home/Work";
+// import Reviews from "@/components/home/Reviews";
 import Partnaires from "@/components/home/Partnaires";
 
 const page = () => {

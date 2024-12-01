@@ -1,8 +1,8 @@
-'use client';
-import React, { useEffect } from "react";
-import DevImg from "../DevImg";
-import Image from "next/image";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+'use client'
+import React, { useEffect } from 'react'
+import DevImg from '../DevImg'
+import Image from 'next/image'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 
 import {
   User2,
@@ -11,101 +11,116 @@ import {
   PhoneCall,
   GraduationCap,
   Calendar,
-  Briefcase,
-} from "lucide-react";
+  Briefcase
+} from 'lucide-react'
 
 const infoData = [
   {
     icon: <User2 size={20} />,
-    text: "Ryan Davis",
+    text: 'Ryan Davis'
   },
   {
     icon: <PhoneCall size={20} />,
-    text: "+012 345 6789",
+    text: '+012 345 6789'
   },
   {
     icon: <MailIcon size={20} />,
-    text: "youremail@email.com",
+    text: 'youremail@email.com'
   },
   {
     icon: <Calendar size={20} />,
-    text: "Born on 10 Mar, 1998",
+    text: 'Born on 10 Mar, 1998'
   },
   {
     icon: <GraduationCap size={20} />,
-    text: "Master on Computer Science",
+    text: 'Master on Computer Science'
   },
   {
     icon: <HomeIcon size={20} />,
-    text: "321 Blue Avenue, NY, USA",
-  },
-];
-import { 
-  Wind, 
-  Droplet, 
-  Settings, 
-  Disc 
-} from "lucide-react";
+    text: '321 Blue Avenue, NY, USA'
+  }
+]
+import { Wind, Droplet, Settings, Disc } from 'lucide-react'
 
 const sectors = [
   {
-    name: "Pneumatique",
-    description: "Spécialisé dans les systèmes et les composants qui utilisent.",
-    icon: <Wind size={40} className="text-gray-600 transition-all duration-300 group-hover:text-white/90" />
+    name: 'Pneumatique',
+    description:
+      'Spécialisé dans les systèmes et les composants qui utilisent.',
+    icon: (
+      <Wind
+        size={40}
+        className='text-gray-600 transition-all duration-300 group-hover:text-white/90'
+      />
+    )
   },
   {
-    name: "Hydraulique",
-    description: "Fournir des solutions utilisant la puissance des fluides.",
-    icon: <Droplet size={40} className="text-gray-600 transition-all duration-300 group-hover:text-white/90" />
+    name: 'Hydraulique',
+    description: 'Fournir des solutions utilisant la puissance des fluides.',
+    icon: (
+      <Droplet
+        size={40}
+        className='text-gray-600 transition-all duration-300 group-hover:text-white/90'
+      />
+    )
   },
   {
-    name: "Instrumentation et Contrôle",
-    description: "Se concentrant sur la mesure et la surveillance.",
-    icon: <Settings size={40} className="text-gray-600 transition-all duration-300 group-hover:text-white/90" />
+    name: 'Instrumentation et Contrôle',
+    description: 'Se concentrant sur la mesure et la surveillance.',
+    icon: (
+      <Settings
+        size={40}
+        className='text-gray-600 transition-all duration-300 group-hover:text-white/90'
+      />
+    )
   },
   {
-    name: "Technologie du vide",
-    description: "Expertise dans la création et le maintien d'environnements à basse pression.",
-    icon: <Disc size={40} className="text-gray-600 transition-all duration-300 group-hover:text-white/90" />
+    name: 'Technologie du vide',
+    description:
+      "Expertise dans la création et le maintien d'environnements à basse pression.",
+    icon: (
+      <Disc
+        size={40}
+        className='text-gray-600 transition-all duration-300 group-hover:text-white/90'
+      />
+    )
   }
-];
+]
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
-import AOS from "aos";
-import 'aos/dist/aos.css';
-
-export default function About() {
+export default function About () {
   useEffect(() => {
     AOS.init({
       offset: 100,
       duration: 800,
-      easing: "ease-in-sine",
-      delay: 100,
-
-    });
-    AOS.refresh();
-  }, []);
+      easing: 'ease-in-sine',
+      delay: 100
+    })
+    AOS.refresh()
+  }, [])
   const getData = (arr, title) => {
-    return arr.find((item) => item.title === title);
-  };
+    return arr.find(item => item.title === title)
+  }
   return (
-    <section className="xl:max-h-[860px] pb-12 xl:py-24" data-aos="fade-left">
-      <div className="container mx-auto">
-        <h2 className="font-PlayfairDisplay section-title mb-8 xl:mb-16 text-center mx-auto">
-        Aperçue <span className=" font-caveat ">Historique</span>
+    <section className='xl:max-h-[860px] pb-12 xl:py-24' data-aos='fade-left'>
+      <div className='container mx-auto'>
+        <h2 className='font-PlayfairDisplay section-title mb-8 xl:mb-16 text-center mx-auto'>
+          Aperçue <span className=' font-caveat '>Historique</span>
         </h2>
 
-        <div className="flex flex-col xl:flex-row ">
+        <div className='flex flex-col xl:flex-row '>
           {/* image */}
-          <div className=" hidden xl:flex flex-1 relative ">
+          <div className=' hidden xl:flex flex-1 relative '>
             <DevImg
-              containerStyles="bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative items-center"
-              imgSrc="/images/about-section.png"
+              containerStyles='bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative items-center'
+              imgSrc='/images/about-section.png'
             />
           </div>
           {/* tabs */}
-          <div className="flex-1">
-            <Tabs defaultValue="company-info">
+          <div className='flex-1'>
+            <Tabs defaultValue='company-info'>
               {/* <TabsList className="w-full grid xl:grid-cols-2 xl:max-w-[520px] xl:border dark:border-none">
                 <TabsTrigger className="w-[230px] xl:w-auto" value="secteur-d'activité">
                 secteur-d'activité
@@ -118,8 +133,7 @@ export default function About() {
                 </TabsTrigger>
               </TabsList> */}
               {/* tabs content */}
-              <div className="text-lg mt-12 xl:mt-8 ">
-         
+              <div className='text-lg mt-12 xl:mt-8 '>
                 {/* <TabsContent value="secteur-d'activité" cl>
                   <div class="relative font-inter antialiased">
                     <main class="  flex flex-col justify-center bg-slate-50 overflow-hidden">
@@ -143,23 +157,23 @@ export default function About() {
                   </div>
                 </TabsContent> */}
                 {/* qualifications */}
-                <TabsContent value="company-info">
-                  <div class="relative font-inter antialiased">
-                    <main class="  flex flex-col justify-center bg-slate-50 overflow-hidden">
-                      <div class="w-full max-w-6xl mx-auto px-4 md:px-6 py-5">
-                        <div class="w-full max-w-3xl mx-auto">
-                          <div class="-my-6">
-                            <div class="relative pl-8 sm:pl-32 py-6 group">
+                <TabsContent value='company-info'>
+                  <div class='relative font-inter antialiased'>
+                    <main class='  flex flex-col justify-center bg-slate-50 overflow-hidden'>
+                      <div class='w-full max-w-6xl mx-auto px-4 md:px-6 py-5'>
+                        <div class='w-full max-w-3xl mx-auto'>
+                          <div class='-my-6'>
+                            <div class='relative pl-8 sm:pl-32 py-6 group'>
                               {/* <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">
                                 The origin
                               </div> */}
 
-                              <div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
-                                <time class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-l font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
-                                2015
+                              <div class='flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5'>
+                                <time class='sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-l font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full'>
+                                  2015
                                 </time>
-                                <div class="text-l font-bold text-slate-900">
-                                Univers Automatisme est fondée
+                                <div class='text-sm font-bold text-slate-900'>
+                                  Univers Automatisme est fondée
                                 </div>
                               </div>
 
@@ -169,17 +183,17 @@ export default function About() {
                               </div> */}
                             </div>
 
-                            <div class="relative pl-8 sm:pl-32 py-6 group">
+                            <div class='relative pl-8 sm:pl-32 py-6 group'>
                               {/* <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">
                                 The milestone
                               </div> */}
 
-                              <div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
-                                <time class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
-                                2017
+                              <div class='flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5'>
+                                <time class='sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-l font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full'>
+                                  2017
                                 </time>
-                                <div class="text-xl font-bold text-slate-900">
-                                Partenariat avec Pixsys & Burkert
+                                <div class='text-sm font-bold text-slate-900'>
+                                  Partenariat avec Pixsys & Burkert
                                 </div>
                               </div>
 
@@ -189,18 +203,18 @@ export default function About() {
                               </div> */}
                             </div>
 
-                            <div class="relative pl-8 sm:pl-32 py-6 group">
+                            <div class='relative pl-8 sm:pl-32 py-6 group'>
                               {/* <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">
                                 The acquisitions
                               </div> */}
 
-                              <div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
-                                <time class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
-                                2019
+                              <div class='flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5'>
+                                <time class='sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-l font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full'>
+                                  2019
                                 </time>
-                                <div class="text-xl font-bold text-slate-900">
-                                Partenariat avec le leader mondiale en
-                                pneumatique SMC
+                                <div class='text-sm font-bold text-slate-900'>
+                                  Partenariat avec le leader mondiale en
+                                  pneumatique SMC
                                 </div>
                               </div>
 
@@ -209,18 +223,18 @@ export default function About() {
                                 product range.
                               </div> */}
                             </div>
-                            <div class="relative pl-8 sm:pl-32 py-6 group">
+                            <div class='relative pl-8 sm:pl-32 py-6 group'>
                               {/* <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">
                                 The acquisitions
                               </div> */}
 
-                              <div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
-                                <time class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
-                                2021
+                              <div class='flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5'>
+                                <time class='sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-l font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full'>
+                                  2021
                                 </time>
-                                <div class="text-xl font-bold text-slate-900">
-                                Première Journée porte ouverte “Tech day” menée
-par Univers Automatisme
+                                <div class='text-sm font-bold text-slate-900'>
+                                  Première Journée porte ouverte “Tech day”
+                                  menée par Univers Automatisme
                                 </div>
                               </div>
 
@@ -229,17 +243,18 @@ par Univers Automatisme
                                 product range.
                               </div> */}
                             </div>
-<div class="relative pl-8 sm:pl-32 py-6 group">
+                            <div class='relative pl-8 sm:pl-32 py-6 group'>
                               {/* <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">
                                 The acquisitions
                               </div> */}
 
-                              <div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
-                                <time class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
-                                2023
+                              <div class='flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5'>
+                                <time class='sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-l font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full'>
+                                  2023
                                 </time>
-                                <div class="text-xl font-bold text-slate-900">
-                                Univers Automatisme était présent dans le foire Siel 2023
+                                <div class='text-sm font-bold text-slate-900'>
+                                  Univers Automatisme était présent dans le
+                                  foire Siel 2023
                                 </div>
                               </div>
 
@@ -282,5 +297,5 @@ par Univers Automatisme
         </div>
       </div>
     </section>
-  );
+  )
 }

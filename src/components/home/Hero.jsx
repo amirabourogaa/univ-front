@@ -46,7 +46,7 @@ const Hero = () => {
               width={450}
               className='-mx-4 py-4'
             />
-            <div className='ml-40 text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]'>
+            <div className='ml-60 text-xl uppercase italic font-semibold mb-4 text-primary tracking-[4px]'>
               More than a supplier....
             </div>
             {/* <h1 className='h1 mb-4'>Univers Automatisme</h1> */}
@@ -97,7 +97,7 @@ const Hero = () => {
               containerStyles='absolute top-[55%] -right-8'
               icon={<RiTeamFill />}
               endCountNum={1500}
-              badgeText='Base clientèle'
+              badgeText='Clients'
             />
             <div className=' bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2'></div>
             <div className='text-primary w-[500px] h-[462px] bg-no-repeat relative bg-bottom'>
