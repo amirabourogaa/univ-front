@@ -3,7 +3,7 @@ import Link from 'next/link';
 const Logo = () => {
   return (
     <Link href='/'>
-      <img src='/images/logo.png' width={120} height={100} priority alt='logo univers' />
+      <img src='/images/logo.png' width={160} height={120} priority alt='logo univers' />
     </Link>
   );
 };

@@ -114,8 +114,8 @@ export default function About () {
           {/* image */}
           <div className=' hidden xl:flex flex-1 relative '>
             <DevImg
-              containerStyles='bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative items-center'
-              imgSrc='/images/about-section.png'
+              containerStyles='w-[460px] h-[460px] bg-no-repeat relative items-center'
+              imgSrc='/images/charte.png'
             />
           </div>
           {/* tabs */}

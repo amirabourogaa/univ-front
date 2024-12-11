@@ -18,14 +18,14 @@ export default function ProgressSlider() {
   const items = [
     {
       img: [
-        "/pictures/pneumatique/1.jpeg",
-        "/pictures/pneumatique/2.jpg",
-        "/pictures/pneumatique/3.jpg",
-        "/pictures/pneumatique/4.jpg",
-        "/pictures/pneumatique/5.jpg",
-        "/pictures/pneumatique/6.jpg",
-        "/pictures/pneumatique/7.jpg",
-        "/pictures/pneumatique/8.jpg",
+        "/categories/pneumatique/1.png",
+        "/categories/pneumatique/2.png",
+        "/categories/pneumatique/3.png",
+        "/categories/pneumatique/4.png",
+        "/categories/pneumatique/5.png",
+        "/categories/pneumatique/6.png",
+        "/categories/pneumatique/7.png",
+        "/categories/pneumatique/8.png",
        
       ],
       desc: "Pneumatique",
@@ -33,14 +33,14 @@ export default function ProgressSlider() {
     },
     {
       img: [
-        "/pictures/automatisme/1.jpg",
-        "/pictures/automatisme/2.jpeg",
-        "/pictures/automatisme/3.jpg",
-        "/pictures/automatisme/4.webp",
-        "/pictures/automatisme/5.webp",
-        "/pictures/automatisme/6.png",
-        "/pictures/automatisme/7.jpeg",
-        "/pictures/automatisme/8.jpg",
+        "/categories/automatisme/1.png",
+        "/categories/automatisme/2.png",
+        "/categories/automatisme/3.png",
+        "/categories/automatisme/4.png",
+        "/categories/automatisme/5.png",
+        "/categories/automatisme/6.png",
+        "/categories/automatisme/7.png",
+        "/categories/automatisme/8.png",
        
       ],
       desc: "Automatisme",
@@ -48,13 +48,13 @@ export default function ProgressSlider() {
     },
     {
       img: [
-        "/pictures/instrumentation/1.jpg",
-        "/pictures/instrumentation/2.jpg",
-        "/pictures/instrumentation/3.png",
-        "/pictures/instrumentation/4.jpg",
-        "/pictures/instrumentation/5.jpg",
-        "/pictures/instrumentation/7.jpg",
-        "/pictures/instrumentation/8.webp",
+        "/categories/instrumentation/1.png",
+        "/categories/instrumentation/2.png",
+        "/categories/instrumentation/3.png",
+        "/categories/instrumentation/4.png",
+        "/categories/instrumentation/5.png",
+        "/categories/instrumentation/7.png",
+        "/categories/instrumentation/8.png",
        
        
       ],
@@ -63,13 +63,14 @@ export default function ProgressSlider() {
     },
     {
       img: [
-        "/pictures/controle-de-fluide/1.jpg",
-        "/pictures/controle-de-fluide/2.jpg",
-        "/pictures/controle-de-fluide/3.jpg",
-        "/pictures/controle-de-fluide/4.jpg",
-        "/pictures/controle-de-fluide/5.jpg",
-        "/pictures/controle-de-fluide/6.jpg",
-        "/pictures/controle-de-fluide/7.jpg",
+        "/categories/controle-de-fluide/1.png",
+        "/categories/controle-de-fluide/2.png",
+        "/categories/controle-de-fluide/3.png",
+        "/categories/controle-de-fluide/4.png",
+        "/categories/controle-de-fluide/5.png",
+        "/categories/controle-de-fluide/6.png",
+        "/categories/controle-de-fluide/7.png",
+        "/categories/controle-de-fluide/8.png",
         
       ],
       desc: "contrôle de fluide",
@@ -77,31 +78,32 @@ export default function ProgressSlider() {
     },
     {
       img: [
-        "/pictures/technique-de-vide/1.webp",
-        "/pictures/technique-de-vide/2.jpg",
-        "/pictures/technique-de-vide/3.jpg",
-        "/pictures/technique-de-vide/4.jpg",
-        "/pictures/technique-de-vide/5.jpg",
-        "/pictures/technique-de-vide/6.jpg",
-        "/pictures/technique-de-vide/7.jpg",
-        "/pictures/technique-de-vide/11.jpg",
-     
+        "/categories/hydraulique/1.png",
+        "/categories/hydraulique/2.png",
+        "/categories/hydraulique/3.png",
+        "/categories/hydraulique/4.png",
+        "/categories/hydraulique/5.png",
+        "/categories/hydraulique/6.png",
+        "/categories/hydraulique/7.png",
+        "/categories/hydraulique/8.png",
+       
       ],
-      desc: "Technique de vide",
+      desc: "Hydraulique",
       buttonIcon: '/ps-icon-04.svg',
     },
     {
       img: [
-        "/pictures/hydraulique/A.jpg",
-        "/pictures/hydraulique/B.webp",
-        "/pictures/hydraulique/C.jpg",
-        "/pictures/hydraulique/D.jpg",
-        "/pictures/hydraulique/DD.jpg",
-        "/pictures/hydraulique/E.jpg",
-        "/pictures/hydraulique/F.png",
+        "/categories/technique-de-vide/1.png",
+        "/categories/technique-de-vide/2.png",
+        "/categories/technique-de-vide/3.png",
+        "/categories/technique-de-vide/4.png",
+        "/categories/technique-de-vide/5.png",
+        "/categories/technique-de-vide/6.png",
+        "/categories/technique-de-vide/7.png",
+        "/categories/technique-de-vide/8.png",
        
       ],
-      desc: "Hydraulique",
+      desc: "Technique de vide",
       buttonIcon: '/ps-icon-04.svg',
     },
   ];
@@ -161,7 +163,7 @@ export default function ProgressSlider() {
   }, []);
   return (
     <section
-    className="relative min-h-screen flex flex-col justify-center bg-slate-50 overflow-hidden"
+    className="relative min-h-screen flex flex-col justify-center bg-white overflow-hidden"
     data-aos="fade-left"
   >
     <h2 className="section-title mt-12 mb-12 xl:my-12 text-center mx-auto">

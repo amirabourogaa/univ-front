@@ -18,6 +18,9 @@ const Partnaires = () => {
               >
                 <ul x-ref="logos" className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
                   <li>
+                    <img src='pictures/partenaires/9.png' alt="Vuo" width={168} height={168} />
+                  </li>
+                  <li>
                     <img src='pictures/partenaires/1.png' alt="Vuo" width={168} height={168} />
                   </li>
                  
