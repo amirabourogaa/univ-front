@@ -1,10 +1,10 @@
 'use client';
 const Partnaires = () => {
   return (
-    <section className='mb-24 bg-slate-50 pb-24 xl:mb-32'>
+    <section className='mb-24 bg-white pb-24 xl:mb-32'>
       <div className=' relative font-inter'>
-      <h2 className='section-title mb-12 text-center bg-slate-50  mx-auto'>  <span className=' font-caveat '>Nos</span> Partenaires</h2>
-        <main className="relative  flex flex-col justify-center bg-slate-50 overflow-hidden">
+      <h2 className='section-title mb-12 text-center bg-white  mx-auto'>  <span className=' font-caveat '>Nos</span> Partenaires</h2>
+        <main className="relative  flex flex-col justify-center bg-white overflow-hidden">
           <div className="w-full mx-auto py-20">
             <div className="text-center">
               <div
@@ -47,7 +47,9 @@ const Partnaires = () => {
                   <li>
                     <img src='pictures/partenaires/7.png' alt="Vuo" width={168} height={168} />
                   </li>
-                 
+                  <li>
+                    <img src='pictures/partenaires/9.png' alt="Vuo" width={168} height={168} />
+                  </li>
                  
                   <li>
                     <img src='pictures/partenaires/8.png' alt="Pixsys" width={180} height={180} />
@@ -61,6 +63,9 @@ const Partnaires = () => {
                     <img src='pictures/partenaires/2.png' alt="Pixsys" width={180} height={180} />
                   </li>
                  
+                  <li>
+                    <img src='pictures/partenaires/9.png' alt="Vuo" width={168} height={168} />
+                  </li>
                 
                 </ul>
               </div>

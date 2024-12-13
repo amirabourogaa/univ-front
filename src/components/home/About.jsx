@@ -112,8 +112,9 @@ export default function About () {
 
         <div className='flex flex-col xl:flex-row '>
           {/* image */}
-          <div className=' hidden xl:flex flex-1 relative '>
+          <div className='hidden xl:flex flex-1 relative'>
             <DevImg
+              shadow = {true}
               containerStyles='w-[460px] h-[460px] bg-no-repeat relative items-center'
               imgSrc='/images/charte.png'
             />

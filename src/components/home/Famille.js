@@ -163,17 +163,17 @@ export default function ProgressSlider() {
   }, []);
   return (
     <section
-    className="relative min-h-screen flex flex-col justify-center bg-white overflow-hidden"
+    className=" w-full relative flex flex-col justify-center bg-white overflow-hidden"
     data-aos="fade-left"
   >
-    <h2 className="section-title mt-12 mb-12 xl:my-12 text-center mx-auto">
+    <h2 className="section-title mt-12 mb-12 2xl:my-12 text-center mx-auto">
       Gamme <span className="font-caveat">de produits</span>
     </h2>
-    <div className="w-full max-w-6xl mx-auto px-4 md:px-6 pb-24">
+    <div className="w-full mx-auto px-4 md:px-6 pb-24">
       <div className="flex justify-center">
-        <div className="w-full max-w-5xl mx-auto text-center">
+        <div className="w-full max-w-7xl mx-auto text-center">
           {/* Boutons de navigation */}
-          <div className="max-w-xs sm:max-w-sm md:max-w-3xl mx-auto grid grid-cols-2 md:grid-cols-6 gap-4 mb-8">
+          <div className="max-w-xl sm:max-w-xl md:max-w-full mx-auto grid grid-cols-2 md:grid-cols-6 gap-4 mb-8">
             {items.map((item, index) => (
               <button
                 key={index}
@@ -190,7 +190,7 @@ export default function ProgressSlider() {
                   <span className="flex items-center justify-center relative w-9 h-9 rounded-full bg-indigo-100 mb-2">
                     <img src={item.buttonIcon} alt={item.desc} />
                   </span>
-                  <span className="block text-sm font-medium text-slate-900 mb-2">
+                  <span className="block text-l font-medium text-slate-900 mb-2">
                     {item.desc}
                   </span>
                   <span
@@ -219,9 +219,9 @@ export default function ProgressSlider() {
                 {item.img.map((img, i) => (
                   <div key={i}>
                     <img
-                      className="h-auto w-full rounded-lg"
-                      height={400}
-                      width={400}
+                     
+                      height={900}
+                      width={900}
                       src={img}
                       alt=""
                     />
