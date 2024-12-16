@@ -53,6 +53,7 @@ export default function ProgressSlider() {
         "/categories/instrumentation/3.png",
         "/categories/instrumentation/4.png",
         "/categories/instrumentation/5.png",
+        "/categories/instrumentation/6.png",
         "/categories/instrumentation/7.png",
         "/categories/instrumentation/8.png",
        

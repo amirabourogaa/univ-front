@@ -6,7 +6,7 @@ const DevImg = ({ shadow, containerStyles, imgSrc }) => {
       <img
         src={imgSrc}
         alt=""
-        className={`${styles.image} ${shadow ? 'shadow-lg' : ''}`}
+        className={`${styles.image} ${shadow ? 'shadow-lg rounded-full' : ''}`}
       />
     </div>
   );

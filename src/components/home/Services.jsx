@@ -45,7 +45,7 @@ const Services = () => {
     AOS.refresh();
   }, []);
   return (
-    <section className='mb-12 xl:mb-36   ' data-aos="fade-right" >
+    <section className='mb-12 xl:mb-36 bg-slate-50' data-aos="fade-right" >
       <div className='container mx-auto'>
         <h2 className='section-title mb-12 xl:mb-24 text-center mx-auto'>
          <span className=' font-caveat '>Nos</span>  Services
@@ -59,7 +59,7 @@ const Services = () => {
                 key={index}
               >
                 <CardHeader className='text-primary absolute -top-[60px]'>
-                  <div className='w-[140px] h-[80px] bg-white dark:bg-background flex justify-center items-center'>
+                  <div className='w-[140px] h-[80px] bg-slate-50 flex justify-center items-center'>
                     {item.icon}
                   </div>
                 </CardHeader>
