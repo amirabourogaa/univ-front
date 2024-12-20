@@ -10,8 +10,8 @@ import { motion } from 'framer-motion';
 const links = [
   { path: '/', name: 'Accueil' },
   { path: '/propos', name: 'A propos' },
-  { path: '/contact', name: 'Contact' },
   { path: '/products', name: 'Nos produits' },
+  { path: '/contact', name: 'Contact' },
 ];
 
 const Nav = ({ containerStyles, linkStyles, underlineStyles ,closeSheet }) => {

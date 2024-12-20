@@ -13,17 +13,14 @@ import Link from 'next/link';
 const icons = [
 
   {
-    path: '/',
+    path: 'https://www.linkedin.com/company/76153257/admin/dashboard/',
     name: <RiLinkedinFill />,
   },
   {
-    path: '/',
+    path: 'https://www.facebook.com/zied300780',
     name: <RiFacebookFill />,
   },
-  {
-    path: '/',
-    name: <RiInstagramFill />,
-  },
+ 
 ];
 
 const Socials = ({ containerStyles, iconsStyles }) => {
