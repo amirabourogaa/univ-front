@@ -62,7 +62,7 @@ const Hero = () => {
                   Contacter nous <Send size={18} />
                 </Button>
               </Link>
-              <Link href='/about'>
+              <Link href='/brochure.pdf'>
                 <Button variant='secondary' className='gap-x-2'>
                 Savoirs plus
                   <Download size={18} />
