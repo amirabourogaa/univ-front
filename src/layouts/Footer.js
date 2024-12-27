@@ -21,7 +21,7 @@ function Footer() {
 
       {/* Contenu principal */}
       <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Colonne gauche : Actualités */}
           <div>
             <h3 className="text-2xl font-bold text-white mb-4">
@@ -40,7 +40,7 @@ function Footer() {
             </p>
           </div>
 
-          {/* Colonne droite : Contact */}
+          {/* Colonne centrale : Contact */}
           <div>
             <h3 className="text-2xl font-bold text-white mb-4">
               Contactez-nous
@@ -111,9 +111,26 @@ function Footer() {
               </li>
             </ul>
           </div>
+
+          {/* Colonne droite : Carte */}
+          <div>
+            <h3 className="text-2xl font-bold text-white mb-4">
+              Localisation
+            </h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3196.558560004932!2d10.2194184!3d36.757165699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd366398e4edc9%3A0x71f254d6ae223f5f!2sUNIVERS%20AUTOMATISME!5e0!3m2!1sfr!2stn!4v1734690213573!5m2!1sfr!2stn"
+              width="100%"
+              height="200"
+              style={{ border: '0' }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
- {/* Formulaire d'abonnement */}
- <div className="mt-16">
+
+        {/* Formulaire d'abonnement */}
+        <div className="mt-16">
           <h3 className="text-3xl font-bold text-white mb-8">
             Abonnez-vous à notre newsletter
           </h3>
@@ -136,21 +153,6 @@ function Footer() {
             </button>
           </form>
         </div>
-        {/* Iframe de la carte */}
-        <div className="mt-16">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3196.558560004932!2d10.2194184!3d36.757165699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd366398e4edc9%3A0x71f254d6ae223f5f!2sUNIVERS%20AUTOMATISME!5e0!3m2!1sfr!2stn!4v1734690213573!5m2!1sfr!2stn"
-            width="100%"
-            height="450"
-            style={{ border: '0' }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-
-        </div>
-
-       
       </div>
     </footer>
   );
