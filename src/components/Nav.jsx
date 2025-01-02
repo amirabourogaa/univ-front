@@ -9,13 +9,30 @@ import { motion } from 'framer-motion';
 
 const links = [
   { path: '/', name: 'Accueil' },
-  { path: '/propos', name: 'A propos' },
   { path: '/products', name: 'Nos produits' },
-  { path: '/contact', name: 'Contact' },
+  { path: '#footer', name: 'Contact' },
+  // { path: '#footer', name: 'Pied de page' }, // Lien vers le footer
 ];
 
-const Nav = ({ containerStyles, linkStyles, underlineStyles ,closeSheet }) => {
+const Nav = ({ containerStyles, linkStyles, underlineStyles, closeSheet }) => {
   const path = usePathname();
+
+  const handleScroll = (event, linkPath) => {
+    if (linkPath.startsWith('#')) {
+      event.preventDefault(); // Empêche la navigation normale
+      const targetId = linkPath.substring(1); // Supprime le #
+      const targetElement = document.getElementById(targetId); // Récupère l'élément
+
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth', // Animation fluide
+          block: 'start', // Position en haut de la vue
+        });
+      }
+      if (closeSheet) closeSheet(); // Ferme le menu si nécessaire
+    }
+  };
+
   return (
     <nav className={`${containerStyles}`}>
       {links.map((link, index) => {
@@ -24,14 +41,14 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles ,closeSheet }) => {
             href={link.path}
             key={index}
             className={` ${linkStyles}`}
-            onClick={closeSheet}
+            onClick={(event) => handleScroll(event, link.path)}
           >
-            {link.path === path && (
+            {link.path === path && !link.path.startsWith('#') && (
               <motion.span
                 initial={{ y: '-100%' }}
                 animate={{ y: 0 }}
                 transition={{ type: 'tween' }}
-                layoutId='underline'
+                layoutId="underline"
                 className={`${underlineStyles}`}
               />
             )}

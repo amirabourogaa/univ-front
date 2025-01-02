@@ -5,7 +5,7 @@ function Footer() {
   const [primaryColor, setPrimaryColor] = useState('#22c55e'); // Couleur par défaut
 
   return (
-    <footer className="dark:bg-gray-900 bg-primary relative z-0 py-10">
+    <footer id="footer" className="dark:bg-gray-900 bg-primary relative z-0 py-10">
       {/* Animation des vagues */}
       <div className="waves">
         {[1, 2, 3].map((i) => (
