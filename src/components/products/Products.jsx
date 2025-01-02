@@ -1,71 +1,7 @@
-'use client'
-import React, { useState } from 'react';
-// import './App.css';
+'use client'; // Assurez-vous que ceci est au sommet si nécessaire dans votre environnement.
 
-const categories = [
-  {
-    name: 'Automatisme',
-    image: '/products/automatisme/Pixsys-KDT-710.jpg',
-    subcategories: [
-      {
-        name: 'Actionneur electrique',
-        products: [
-          { name: 'Controleur', image: '/products/automatisme/actionneur-electrique/CONTROLEURS/Controlador-JXC-1280x640.png' },
-          { name: 'Controleur 2', image: '/products/automatisme/actionneur-electrique/CONTROLEURS/JXC73_83.jpg' },
-        
-        ],
-      },
-      {
-        name: 'Commande de moteur électrique',
-        products: [
-          { name: 'MacBook Pro', image: '/images/macbook.jpg' },
-          { name: 'Dell XPS', image: '/images/dell.jpg' },
-        ],
-      },
-      {
-        name: 'Composants électrique',
-        products: [
-          { name: 'MacBook Pro', image: '/images/macbook.jpg' },
-          { name: 'Dell XPS', image: '/images/dell.jpg' },
-        ],
-      },
-      {
-        name: "Controle d'électricité statique",
-        products: [
-          { name: 'MacBook Pro', image: '/images/macbook.jpg' },
-          { name: 'Dell XPS', image: '/images/dell.jpg' },
-        ],
-      },
-      {
-        name: "HMI et PLC",
-        products: [
-          { name: 'MacBook Pro', image: '/images/macbook.jpg' },
-          { name: 'Dell XPS', image: '/images/dell.jpg' },
-        ],
-      },
-    ],
-  },
-  {
-    name: 'Controle de fluide',
-    image: '/products/controle-de-fluide/controle.jpg',
-    subcategories: [
-      {
-        name: 'Homme',
-        products: [
-          { name: 'T-shirt', image: '/images/tshirt.jpg' },
-          { name: 'Pantalon', image: '/images/pants.jpg' },
-        ],
-      },
-      {
-        name: 'Femme',
-        products: [
-          { name: 'Robe', image: '/images/dress.jpg' },
-          { name: 'Jupe', image: '/images/skirt.jpg' },
-        ],
-      },
-    ],
-  },
-];
+import React, { useState } from 'react';
+import { categories } from './data.js'; // Chemin relatif vers data.js
 
 function Products() {
   const [selectedCategory, setSelectedCategory] = useState(null);
