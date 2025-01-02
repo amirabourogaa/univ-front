@@ -1,14 +1,22 @@
 'use client'; // Assurez-vous que ceci est au sommet si nécessaire dans votre environnement.
 
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { categories } from './data.js'; // Chemin relatif vers data.js
 import { motion } from 'framer-motion'; // Pour les animations
 
 function Products() {
-  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState(categories[0]);
+  const subcategoriesRef = useRef(null); // Référence vers la section des sous-catégories
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(selectedCategory?.name === category.name ? null : category);
+    // Effectuer un défilement automatique
+    if (subcategoriesRef.current) {
+      subcategoriesRef.current.scrollIntoView({
+        behavior: 'smooth', // Animation fluide
+        block: 'start', // Position en haut de la vue
+      });
+    }
   };
 
   return (
@@ -41,7 +49,13 @@ function Products() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
             />
-            <p className="text-center font-semibold">{category.name}</p>
+            <p
+              className={`text-center font-semibold ${
+                selectedCategory?.name === category.name ? 'text-primary' : ''
+              }`}
+            >
+              {category.name}
+            </p>
           </motion.div>
         ))}
       </motion.div>
@@ -50,6 +64,7 @@ function Products() {
       {selectedCategory && (
         <motion.div
           layout
+          ref={subcategoriesRef} // Référence ajoutée ici
           className="mt-10"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
