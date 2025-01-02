@@ -39,5 +39,29 @@ export const categories = [
         },
       ],
     },
+    {
+      name: "Controle de fluide",
+      image: '/products/controle-de-fluide/controle.jpg',
+      subcategories: [
+        {
+          name: "ELECTROVANNES",       
+          products: [
+            { name: "ELECTROVANNES", image: "/products/controle-de-fluide/ELECTROVANNES/ELECTROVANNES.png" },
+          ],
+        },
+        {
+          name: "VANNES DE PROCESS",
+          products: [
+            { name: 'VANNES DE PROCESS', image: '/products/controle-de-fluide/VANNES-DE-PROCESS/VANNES-DE-PROCESS.jpg' }
+          ],
+        },
+        {
+          name: "VANNES DE REGULATION",
+          products: [
+            { name: 'VANNES DE REGULATION', image: '/products/controle-de-fluide/VANNES-DE-REGULATION/VANNES-DE-REGULATION.jpg' },     ],
+        },
+      
+      ],
+    },
 
   ];
