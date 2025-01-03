@@ -71,7 +71,7 @@ function Products() {
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-2xl font-bold text-gray-700 mb-6 text-center">
-            Sous-catégories : {selectedCategory.name}
+           {selectedCategory.name}
           </h2>
           <motion.div
             layout
