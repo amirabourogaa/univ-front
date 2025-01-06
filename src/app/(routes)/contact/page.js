@@ -99,17 +99,16 @@ function page() {
               <div>
                 <h2 className="mt-4  font-caveat tracking-[1px] text-primary" style={{ fontSize: "18px" }}>Comment pouvons-nous vous aider ?</h2>
                 <p className="mt-2 text-sm text-gray-700 font-inter tracking-wide" >Notre équipe est là pour vous aider.</p>
-                <p className="mt-2 text-sm text-gray-700  font-inter tracking-wide" >info@loremipsumdolor</p>
+                <p className="mt-2 text-sm text-gray-700  font-inter tracking-wide" >univers.automatisme@gnet.com
+                </p>
               </div>
             </div>
             <div className="flex gap-3" data-aos="fade-left">
-              <div className="mt-4 drop-shadow-lg text-primary">
-                <SlLocationPin size={24} />
-              </div>
+             
               <div>
                 <h2 className="mt-4  font-caveat tracking-[2px] text-primary" style={{ fontSize: "18px" }}>Notre emplacement</h2>
-                <p className="mt-2 text-sm text-gray-700  font-inter tracking-wide" >Dummy Road 125x</p>
-                <p className="mt-2 text-sm text-gray-700  font-inter tracking-wide" >Street Location,City,Area</p>
+                <p className="mt-2 text-sm text-gray-700  font-inter tracking-wide" >06, 2013                 </p>
+                <p className="mt-2 text-sm text-gray-700  font-inter tracking-wide" >Rue Ali Belhouane, Ben Arous</p>
               </div>
             </div>
           </div>
@@ -117,11 +116,7 @@ function page() {
 
       </div>
         <div className="container  px-4 lg:mt-[6rem] md:mt-[26rem]  mx-auto ">
-          <div className="flex justify-center items-center lg:-mx-6 ">
-
-            <iframe className=" md:w-screen mt-20 border-primary border-2 rounded-lg p-1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.8625213585906!2d10.189982275570134!3d36.821814166481346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd3550232fe4b9%3A0x488b37a9204e79dd!2sSfectoria!5e0!3m2!1sfr!2stn!4v1722344990685!5m2!1sfr!2stn" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-          </div>
+         
           <div>
           <Socials
             containerStyles='flex gap-x-10 items-center justify-center mt-14'
